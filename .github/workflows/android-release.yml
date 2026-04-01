@@ -36,3 +36,4 @@ jobs:
           packageName: com.ram.androidcidemo   # ⚠️ change this
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: internal
+          status: draft   # ✅ ADD THIS
