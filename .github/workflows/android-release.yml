@@ -26,6 +26,14 @@ jobs:
       - name: Grant Permission
         run: chmod +x gradlew
 
+      # ✅ NEW: Run Unit Tests
+      - name: Run Unit Tests
+        run: ./gradlew test
+
+      # ✅ NEW: Run Lint Check (optional but recommended)
+      - name: Run Lint
+        run: ./gradlew lint
+
       - name: Build AAB
         run: ./gradlew bundleRelease
 
