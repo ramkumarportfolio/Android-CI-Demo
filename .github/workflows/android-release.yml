@@ -21,7 +21,7 @@ jobs:
 
       - name: Decode Keystore
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > keystore.jks
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android_ci_cd.jks
 
       - name: Grant Permission
         run: chmod +x gradlew
