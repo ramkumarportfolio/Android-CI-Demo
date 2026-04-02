@@ -20,9 +20,9 @@ android {
     signingConfigs {
         create("release") { // Use create or getByName for explicit declaration
             storeFile = file("android_ci_cd.jks")
-            storePassword = "Ramkumar@810"
-            keyAlias = "android_ci_cd"
-            keyPassword = "Ramkumar@810"
+            storePassword = System.getenv("KEYSTORE_PASSWORD")
+            keyAlias = System.getenv("KEY_ALIAS")
+            keyPassword = System.getenv("KEY_PASSWORD")
         }
     }
 
